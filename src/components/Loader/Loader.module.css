@@ -1,0 +1,20 @@
+.loader {
+  padding: 10px;
+  border: 6px solid #00F;
+  border-bottom-color: transparent;
+  border-radius: 22px;
+  height: 0;
+  width: 0;
+  margin: 0 auto;
+  animation: rotate 1s infinite linear;
+  -webkit-animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

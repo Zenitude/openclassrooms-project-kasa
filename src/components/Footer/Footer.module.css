@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    background: var(--bgFooter);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.fill {
+    fill : var(--primary);
+}
+
+.footer a {
+    display: flex;
+    flex-direction: row;
+}
+
+.p {
+    color: var(--primary);
+}

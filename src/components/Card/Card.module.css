@@ -1,0 +1,21 @@
+.hostingCard {
+    background: var(--linear), var(--secondary);
+    /* max-width: 340px; */
+    min-width: 240px;
+    height: 280px;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-decoration: none;
+}
+
+.hostingTitle {
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: normal;
+}

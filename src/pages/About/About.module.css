@@ -1,0 +1,9 @@
+.containerDropdown {
+    width: 100%;
+    min-width: 260px;
+    margin: 32px auto;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

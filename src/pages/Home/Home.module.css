@@ -1,0 +1,22 @@
+.containerHousings {
+    width: 100%;
+    min-width: 260px;
+    margin: 32px auto;
+    padding: 32px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 340px));
+    gap: 32px;
+    justify-content: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+@media all and (min-width: 395px)
+{
+    .containerHousings {
+        background-color: var(--tertiary);
+    }
+}

@@ -1,7 +1,24 @@
+import Banner from "../../components/Banner/Banner";
+import styles from './Home.module.css';
+import Card from "../../components/Card/Card";
+import housing from '../../utils/datas/housing.json';
+
 export default function Home() {
+
   return (
-    <div className="Home">
-      
-    </div>
+    <main>
+      <Banner page={`home`} />
+      <div className={styles.containerHousings}>
+        {
+          housing.map(({id, title}) => (
+            <Card 
+              key={id}
+              id={id}
+              title={title}
+            />
+          ))
+        }
+      </div>      
+    </main>
   );
 }

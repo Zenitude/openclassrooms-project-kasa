@@ -1,0 +1,18 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    gap: 40px;
+}
+
+.p {
+    font-size: 36px;
+    color: var(--secondary);
+}
+
+.link {
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    font-size: 18px;
+}

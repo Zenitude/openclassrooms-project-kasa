@@ -1,0 +1,22 @@
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    height: 223px;
+    padding: 10px;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px ;
+    -webkit-border-radius: 25px ;
+    -moz-border-radius: 25px ;
+    -ms-border-radius: 25px ;
+    -o-border-radius: 25px ;
+    position: relative;
+    z-index: 1;
+}
+
+.h1 {
+    font-size: calc(1.75rem + 1.5vw);
+    font-weight: normal;
+}
