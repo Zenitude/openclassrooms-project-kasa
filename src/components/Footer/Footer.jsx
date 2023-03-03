@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import Logo from '../../assets/images/Logo/Logo';
+import { ReactComponent as Logo } from '../../assets/images/Logo/logo.svg';
 
 export default function Footer() {
   const year = new Date().getFullYear();
