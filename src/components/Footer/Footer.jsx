@@ -6,8 +6,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
-      <Logo fill={styles.fill}/>
-        <p className={styles.p}>&copy; {year} All rights reserved</p>
+      <Logo />
+      <p>&copy; {year} All rights reserved</p>
     </footer>
   )
 }

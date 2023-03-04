@@ -10,7 +10,7 @@ export default function Dropdown({summary, content}) {
 
     return (
         <details className={styles.details}>
-            <summary className={styles.summary} onClick={() => setRotate(!rotate)}>{summary} <Arrow style={styleArrow} /></summary>
+            <summary onClick={() => setRotate(!rotate)}>{summary} <Arrow style={styleArrow} /></summary>
             {
                 !Array.isArray(content)
                 ? (<p className={styles.content}>{content}</p>)

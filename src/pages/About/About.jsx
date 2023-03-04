@@ -10,8 +10,8 @@ export default function About() {
       <Banner page={'about'} />
       <div className={styles.containerDropdown}>
         {
-          dropdowns.map(({ summary, content }) => (
-            <Dropdown summary={summary} content={content}/>
+          dropdowns.map(({ summary, content }, index) => (
+            <Dropdown key={index} summary={summary} content={content}/>
           ))
         }
       </div>

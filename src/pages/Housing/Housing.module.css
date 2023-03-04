@@ -31,7 +31,7 @@
 }
 
 .starsAndProfile div:first-child {
-    font-size: calc(1.3rem + 1vw);
+    font-size: calc(1rem + 1vw);
     display: flex;
     flex-direction: row;
 }
@@ -39,7 +39,6 @@
 .starsAndProfile div:last-child {
     width: min-content;
     display: flex;
-    align-items: center;
     gap: 10px;
 }
 
@@ -48,12 +47,12 @@
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .starsAndProfile div:last-child img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -85,11 +84,20 @@
     }
 
     .starsAndProfile div:last-child {
+        align-items: center;
+    }
+
+    .starsAndProfile div:last-child {
         width: auto;
         justify-content: flex-end;
     }
 
     .dropdowns {
         flex-direction: row;
+    }
+
+    .starsAndProfile div:last-child img {
+        width: 75px;
+        height: 75px;
     }
 }

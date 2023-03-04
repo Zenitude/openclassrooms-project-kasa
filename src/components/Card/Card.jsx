@@ -7,7 +7,7 @@ export default function Card({ id, title }) {
 
     return (
         <Link className={styles.hostingCard} to={`/housing/${id}`}>
-            <h2 className={styles.hostingTitle}>{title}</h2>
+            <h2>{title}</h2>
         </Link>
     )
 }

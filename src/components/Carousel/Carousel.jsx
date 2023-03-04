@@ -32,8 +32,8 @@ export default function Carousel({pictures}) {
                 pictures.length > 1
                 && (
                     <button 
-                        className={styles.previous} 
                         id='previous'
+                        className={styles.previous}
                         aria-label='previous image'
                         onClick={(event) => switchImage(idImage, event.target.parentElement)}
                     >
@@ -43,7 +43,7 @@ export default function Carousel({pictures}) {
             }
             
 
-            <figure className={styles.figures} style={styleImage}>
+            <figure class={styles.figure} style={styleImage}>
                 {
                     pictures.map((image, index) => (
                         <img
@@ -51,8 +51,8 @@ export default function Carousel({pictures}) {
                             src={image}
                             data-index={pictures.indexOf(image)}
                             alt={"image du logement"}
-                            className={styles.images}
                             aria-hidden
+                            className={styles.images}
                         />
                     ))
                 }
@@ -62,10 +62,10 @@ export default function Carousel({pictures}) {
                 pictures.length > 1
                 && (
                     <>
-                        <button 
-                            className={styles.next} 
+                        <button  
                             id='next'
                             aria-label="next image"
+                            className={styles.next}
                             onClick={(event) => switchImage(idImage, event.target.parentElement)}
                         >
                             <Next className={styles.arrows} />

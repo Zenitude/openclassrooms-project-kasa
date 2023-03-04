@@ -14,7 +14,7 @@ export default function Banner({page}) {
 
   return (
     <section className={styles.banner} style={bgStyle}>
-        {page === 'home' && <h1 className={styles.h1}>Chez vous, partout et ailleurs</h1>}
+        {page === 'home' && <h1>Chez vous, partout et ailleurs</h1>}
     </section>
   )
 }

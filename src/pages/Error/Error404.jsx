@@ -7,7 +7,7 @@ export default function Error404() {
   return (
     <main className={styles.main}>
       <SVG404 />
-      <p className={styles.p}>Oups! La page que vous demandez n'existe pas.</p>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
       <Link className={styles.link} to='/'>Retourner sur la page d'accueil</Link>
     </main>
   )

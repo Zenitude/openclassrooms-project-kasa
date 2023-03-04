@@ -12,16 +12,11 @@
 
 .footer svg {
     fill : var(--primary);
-    margin: 0 auto;
+    text-align: center;
     width: 100%;
     min-width: 150px;
 }
 
-.footer a {
-    display: flex;
-    flex-direction: row;
-}
-
-.p {
+.footer svg, .footer p {
     color: var(--primary);
 }

@@ -14,7 +14,7 @@
     min-width: 150px;
 }
 
-.nav {
+.header nav {
     margin-left: auto;
     display: flex;
     flex-wrap: wrap;
@@ -23,22 +23,14 @@
     font-size: calc(0.5rem + 1vw);
 }
 
-.link {
+.link, .activeLink {
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--secondary);
     display: inline-block;
 }
 
 .activeLink {
     text-decoration: underline;
-    text-transform: uppercase;
-    color: var(--secondary);
-    display: inline-block;
-}
-
-.fill {
-    fill : var(--secondary);
 }
 
 @media all and (min-width: 450px) {

@@ -16,7 +16,8 @@
     z-index: 1;
 }
 
-.h1 {
+.banner h1 {
     font-size: calc(1.75rem + 1.5vw);
     font-weight: normal;
+    color: var(--primary);
 }

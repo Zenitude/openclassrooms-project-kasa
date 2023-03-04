@@ -11,7 +11,7 @@
     -o-border-radius: 5px;
 }
 
-.summary {
+.details summary {
     background-color: var(--secondary);
     height: 47px;
     display: flex;
@@ -28,7 +28,7 @@
     -o-border-radius: 5px;
 }
 
-.summary .rotateSvg {
+.details summary .rotateSvg {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -39,7 +39,6 @@
 .content {
     padding: 15px;
     font-size: calc(1rem + 1vw);
-    color: var(--secondary);
     list-style-position: inside;
     list-style-type: none;
 }
