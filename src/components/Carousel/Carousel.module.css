@@ -67,6 +67,10 @@
     font-weight: 600;
 }
 
+.carousel button {
+    height: calc(1.5rem + 3vw);
+}
+
 .arrows {
     width: 100%;
     height: 100%;

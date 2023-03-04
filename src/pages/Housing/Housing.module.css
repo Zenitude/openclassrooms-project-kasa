@@ -84,12 +84,11 @@
 
     .starsAndProfile div:last-child {
         width: auto;
+        justify-content: flex-end;
     }
 
     .starsAndProfile div:last-child img {
         width: 75px;
         height: 75px;
     }
-
-
 }
