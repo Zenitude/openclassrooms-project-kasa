@@ -80,6 +80,8 @@
 
     .starsAndProfile {
         flex-direction: column-reverse;
+        justify-content: flex-end;
+        gap: 10px;
     }
 
     .starsAndProfile div:last-child {

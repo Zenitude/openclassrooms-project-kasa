@@ -1,5 +1,5 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import { TbStarFilled, TbStar } from "react-icons/tb";
 import datas from '../../utils/datas/housing.json';
 import styles from './Housing.module.css';
@@ -8,9 +8,18 @@ import Tag from '../../components/Tag/Tag';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 export default function Housing() {
+    const navigate = useNavigate();
     const { id } = useParams();
     const [ house ] = datas.filter(data => data.id === id);
     let stars = [];
+
+    useEffect(() => {
+        window.addEventListener('load', () => {
+            if(typeof house !== 'object') {
+                navigate('/error-house', {replace: true});
+            }
+        })
+    })
 
     function displayStars(nbStars) {
         
@@ -26,16 +35,13 @@ export default function Housing() {
         
     }
    
-    if(typeof house !== 'object')
-    {
-        return ('hoho')
-    } else {
+    if(typeof house === 'object') {
         return (
         
             <main>
     
                 <Carousel pictures={house.pictures}/>
-
+    
                 <div className={styles.infos}>
                     <div className={styles.titlesAndTags}>
                         <div>
@@ -48,15 +54,15 @@ export default function Housing() {
                             }
                         </div>
                     </div>
-
+    
                     <div className={styles.starsAndProfile}>                    
                         <div>
                             {displayStars(house.rating)}
                             {
-                                stars.map((el) => (
+                                stars.map((el, index) => (
                                     el === 1
-                                    ? (<TbStarFilled />)
-                                    : (<TbStar />)
+                                    ? (<TbStarFilled key={index} />)
+                                    : (<TbStar key={index} />)
                                 ))
                             }
                         </div>
