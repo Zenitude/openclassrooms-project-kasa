@@ -14,11 +14,9 @@ export default function Housing() {
     let stars = [];
 
     useEffect(() => {
-        window.addEventListener('load', () => {
-            if(typeof house !== 'object') {
-                navigate('/error-house', {replace: true});
-            }
-        })
+        if(house === undefined) {
+            navigate('/error-house');
+        }
     })
 
     function displayStars(nbStars) {
