@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 15px;
-    font-size: calc(0.8rem + 1vw);
+    font-size: calc(0.5rem + 1vw);
 }
 
 .link {
@@ -39,4 +39,10 @@
 
 .fill {
     fill : var(--secondary);
+}
+
+@media all and (min-width: 450px) {
+    .header {
+        padding: 32px;
+    }
 }

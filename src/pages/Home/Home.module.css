@@ -14,7 +14,7 @@
     -o-border-radius: 25px;
 }
 
-@media all and (min-width: 395px)
+@media all and (min-width: 450px)
 {
     .containerHousings {
         background-color: var(--tertiary);

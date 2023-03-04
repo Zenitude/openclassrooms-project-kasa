@@ -1,6 +1,7 @@
 .details {
-    width: 80%;
+    width: 100%;
     min-width: 260px;
+    height: fit-content;
     margin: 0 auto;
     background-color: var(--tertiary);
     border-radius: 5px;
@@ -37,6 +38,8 @@
 
 .content {
     padding: 15px;
-    font-size: calc(1.1rem + 1vw);
+    font-size: calc(1rem + 1vw);
     color: var(--secondary);
+    list-style-position: inside;
+    list-style-type: none;
 }
