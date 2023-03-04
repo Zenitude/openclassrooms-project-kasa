@@ -43,7 +43,7 @@ export default function Carousel({pictures}) {
             }
             
 
-            <figure class={styles.figure} style={styleImage}>
+            <figure className={styles.figure} style={styleImage}>
                 {
                     pictures.map((image, index) => (
                         <img
