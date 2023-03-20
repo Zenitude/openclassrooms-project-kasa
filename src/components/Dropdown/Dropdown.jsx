@@ -8,6 +8,8 @@ export default function Dropdown({summary, content}) {
         transform: rotate ? 'rotate(0)' : 'rotate(180deg)'
     }
 
+    
+
     return (
         <details className={styles.details}>
             <summary onClick={() => setRotate(!rotate)}>{summary} <Arrow style={styleArrow} /></summary>

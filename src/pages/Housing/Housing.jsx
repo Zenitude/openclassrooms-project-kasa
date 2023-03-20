@@ -1,38 +1,24 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { TbStarFilled, TbStar } from "react-icons/tb";
 import datas from '../../utils/datas/housing.json';
 import styles from './Housing.module.css';
 import Carousel from '../../components/Carousel/Carousel';
 import Tag from '../../components/Tag/Tag';
+import RatingStars from '../../components/RatingStars/RatingStars';
+import Host from '../../components/Host/Host';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 export default function Housing() {
     const navigate = useNavigate();
     const { id } = useParams();
     const [ house ] = datas.filter(data => data.id === id);
-    let stars = [];
-
+    
     useEffect(() => {
         if(house === undefined) {
             navigate('/error-house');
         }
     })
 
-    function displayStars(nbStars) {
-        
-        for(let i = 1 ; i <= nbStars ; i++)
-        {
-            stars.push(1);
-        }
-    
-        for(let i = 1 ; i <= 5 - nbStars ; i++)
-        {
-            stars.push(0);
-        }
-        
-    }
-   
     if(typeof house === 'object') {
         return (
         
@@ -54,20 +40,8 @@ export default function Housing() {
                     </div>
     
                     <div className={styles.starsAndProfile}>                    
-                        <div>
-                            {displayStars(house.rating)}
-                            {
-                                stars.map((el, index) => (
-                                    el === 1
-                                    ? (<TbStarFilled key={index} />)
-                                    : (<TbStar key={index} />)
-                                ))
-                            }
-                        </div>
-                        <div>
-                            <h3><span>{house.host.name.split(' ')[0]}</span> <span>{house.host.name.split(' ')[1]}</span></h3>
-                            <img src={house.host.picture} alt={`avatar de ${house.host.name}`} />
-                        </div>
+                        <RatingStars rating={house.rating} />
+                        <Host name={house.host.name} picture={house.host.picture}/>
                     </div>
                 </div>
     

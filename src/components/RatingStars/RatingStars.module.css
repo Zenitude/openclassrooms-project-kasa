@@ -1,0 +1,5 @@
+.stars {
+    font-size: calc(1rem + 1vw);
+    display: flex;
+    flex-direction: row;
+}

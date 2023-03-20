@@ -1,5 +1,4 @@
 .hostingCard {
-    background: var(--linear), var(--secondary);
     min-width: 240px;
     height: 280px;
     display: flex;
